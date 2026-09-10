@@ -2,7 +2,7 @@
 title: Paletti 07
 start: 2026-09-19 14:00:00+02:00
 end: 2026-09-20T02:00:00.000+02:00
-status: CONFIRMED
+status: TENTATIVE
 opencall:
   en: ""
 place:
