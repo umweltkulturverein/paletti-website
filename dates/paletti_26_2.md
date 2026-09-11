@@ -20,4 +20,31 @@ place:
       thrilled to host the Paletti Festival at the Akki and turn the grounds
       into our own playground for a weekend—filled with music, creativity, and
       new connections.
+program:
+  workshops:
+    - description: ""
+      name: Kochen
+    - description: ""
+      name: Waldspaziergang
+    - description: ""
+      name: "Kreatives Gestalten "
+    - description: ""
+      name: Elektro zu Schmuck by henny&nico
+    - description: ""
+      name: Quartier:MOBIL
+  music:
+    - description: ""
+      name: Jakob Dobers
+    - description: ""
+      name: Liederin
+    - description: ""
+      name: Nmadria
+    - description: ""
+      name: Kimby
+    - description: ""
+      name: Elektro aufs Brot
+    - description: ""
+      name: zdeŝar
+    - description: ""
+      name: Molten Timbre
 ---
