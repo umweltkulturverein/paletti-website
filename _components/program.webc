@@ -7,21 +7,25 @@
         past = true
     }
 
-    let placeholder = {
-        title: next.data.title,
-        place: next.data.place.name,
-        date: formatDate(next.data.start)
+    let placeholder = {}
+
+    if (next) {
+        placeholder = {
+            title: next.data.title,
+            place: next.data.place?.name,
+            date: formatDate(next.data.start)
+        }
     }
 </script>
 
-<h2 @text="i18n('program')"></h2>
+<h2 @text="i18n('program')" webc:if="next"></h2>
 
-<div class="program-text">
+<div class="program-text" webc:if="next">
     <span webc:nokeep webc:if="!next.data.program" @html="i18n('program.future', placeholder)"></span>
     <span webc:nokeep webc:elseif="past" @html="i18n('program.past', placeholder)"></span>
     <span webc:nokeep webc:else @html="i18n('program.planned', placeholder)"></span>
 </div>
-<div class="program" webc:if="next.data.program">
+<div class="program" webc:if="next && next.data.program">
     <div class="category" webc:if="next.data.program.workshops">
         <div class="headline-container">
             <h3 @text="i18n('workshops')"></h3>
